@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {responseData} from './data/data'
 import DataTable from './Tab';
 
-
 class DridComp extends Component {
    constructor(props) {
        super(props);
@@ -53,8 +52,6 @@ class DridComp extends Component {
       }));
   }
 
-  
-
   previousPage = () =>{
     const startPage = (this.state.currentPageNo-1)*this.state.defaultSize;
     const endPage = this.state.currentPageNo*this.state.defaultSize;
@@ -68,8 +65,7 @@ class DridComp extends Component {
     }
   }
 
-
-    render() {
+ render() {
        const cols =  responseData.length>0?responseData[0]:[];
         return (
             <div>
